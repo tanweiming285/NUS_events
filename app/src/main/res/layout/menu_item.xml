@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    android:layout_width="80dp"
+    android:layout_height="40dp"
+    android:id="@+id/menuItem"
+    android:textColor="#ffffff"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

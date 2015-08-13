@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 public class navigationActivity extends AppCompatActivity {
 
@@ -11,6 +14,10 @@ public class navigationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+        String[] menu = getResources().getStringArray(R.array.menu);
+        ListView menuList = (ListView)findViewById(R.id.navigationList);
+        menuList.setAdapter(new ArrayAdapter<String>(this,R.layout.menu_item,menu));
+
     }
 
     @Override
